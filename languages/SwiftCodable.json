@@ -115,7 +115,7 @@
             "signature": "\tinit(from decoder: Decoder) throws ",
             "bodyStart": "{\n\t\tlet values = try decoder.container(keyedBy: CodingKeys.self)\n",                     
             "bodyEnd": "\t}\n",
-            "codeForEachProperty": "\t\t<!VarName!> = try values.decodeIfPresent(<!VarType!>.self, forKey: .<!VarName!>) ?? ""\n",
+            "codeForEachProperty": "\t\t<!VarName!> = try values.decodeIfPresent(<!VarType!>.self, forKey: .<!VarName!>) ?? \"\"\n",
             "codeForUndefinedProperty": "\t\t<!VarName!> = nil // TODO: Add code for decoding `<!VarName!>`, It was null at the time of model creation.\n",
             "codeForUndefinedArrayProperty": "\t\t<!VarName!> = [] // TODO: Add code for decoding `<!VarName!>`, It was empty at the time of model creation.\n",
             "comment": ""
