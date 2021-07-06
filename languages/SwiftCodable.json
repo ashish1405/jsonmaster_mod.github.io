@@ -1,6 +1,7 @@
 {
     "modelStart": "{\n",
     "reservedKeywords": [
+        "description",
         "associatedtype", 
         "class", 
         "deinit", 
