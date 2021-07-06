@@ -112,7 +112,7 @@
             "codeForEachProperty": "\t\tcase <!VarName!> = \"<!JsonKeyName!>\"\n",
             "comment": ""
         },{            
-            "signature": "\tinit(from decoder: Decoder) throws ",
+            "signature": "\trequired init(from decoder: Decoder) throws ",
             "bodyStart": "{\n\t\tlet values = try decoder.container(keyedBy: CodingKeys.self)\n",                     
             "bodyEnd": "\t}\n",
             "codeForEachProperty": "\t\t<!VarName!> = try values.decodeIfPresent(<!VarType!>.self, forKey: .<!VarName!>) ?? \"\"\n",
